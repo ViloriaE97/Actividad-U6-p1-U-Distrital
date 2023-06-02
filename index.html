@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinicaIndex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1><img src="/img/hospital.png" alt=""><br><br> Clínica U Distrital</h1>
+    </nav>
+
+    <br><h2>Formulario de Doctores <img src="/img/medico.png" alt=""></h2>
+<div class="container">
+    <form id="doctor-form">
+        <label for="doctor-nombre">Nombre:</label>
+        <input type="text" id="doctor-nombre" required>
+
+        <label for="doctor-apellido">Apellido:</label>
+        <input type="text" id="doctor-apellido" required>
+
+        <label for="doctor-cedula">Número de Cédula:</label>
+        <input type="text" id="doctor-cedula" required>
+
+        <label for="doctor-especialidad">Especialidad:</label>
+        <select id="doctor-especialidad" required>
+            <option value="">Seleccione una especialidad</option>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+        </select>
+
+        <label for="doctor-consultorio">Consultorio:</label>
+        <input type="text" id="doctor-consultorio" required>
+
+        <label for="doctor-correo">Correo de contacto:</label>
+        <input type="email" id="doctor-correo" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+</div> <br><br><br>
+    <h2>Formulario de Pacientes <img src="/img/anestesia.png" alt=""></h2>
+<div class="container">
+    <form id="paciente-form">
+        <label for="paciente-nombre">Nombre:</label>
+        <input type="text" id="paciente-nombre" required>
+
+        <label for="paciente-apellido">Apellido:</label>
+        <input type="text" id="paciente-apellido" required>
+
+        <label for="paciente-cedula">Número de Cédula:</label>
+        <input type="text" id="paciente-cedula" required>
+
+        <label for="paciente-edad">Edad:</label>
+        <input type="number" id="paciente-edad" required>
+
+        <label for="paciente-telefono">Teléfono:</label>
+        <input type="tel" id="paciente-telefono" required>
+
+        <label for="paciente-especialidad">Especialidad requerida:</label>
+        <select id="paciente-especialidad" required>
+            <option value="">Seleccione una especialidad</option>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+        </select>
+
+        <button type="submit">Guardar</button>
+    </form>
+</div>
+<hr>
+    <h2><img src="/img/historia-clinica.png" alt=""> Listado de Doctores</h2><br>
+    <table id="doctores-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Número de Cédula</th>
+                <th>Especialidad</th>
+                <th>Consultorio</th>
+                <th>Correo de contacto</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table> <br><br>
+    <hr>
+    <h2><img src="/img/historia-clinica.png" alt=""> Listado de Pacientes</h2><br>
+    <table id="pacientes-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Número de Cédula</th>
+                <th>Edad</th>
+                <th>Teléfono</th>
+                <th>Especialidad requerida</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+<hr>
+    <footer>
+        <div class="card text-center">
+            <div class="card-header">
+              Clinica U Distrital
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">" Tu salud es nuestro propósito "</h5>
+              <p class="card-text">Visita nuestras sedes ubicadas en los distintos puntos de la ciudad</p>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <hr>
+              Todos los derechos reservados 2023 - ErickViloria
+            </div>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
